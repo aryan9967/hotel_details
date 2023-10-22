@@ -4,24 +4,26 @@
     box-sizing: border-box;
 }
 .top_navi{
-    height: 43vh;
+    height: 44vh;
     width: 100%;
     background: url("images/download.webp") center ;
     background-size: contain;
-    margin-bottom: 2%; 
+    position: relative;
 }
 .navigation{
-    height: 9vh;
+    height: 8vh;
     width: 100%;
     border-bottom: 2px solid white;
 }
 .top{
-    height: 34vh;
+    height: 36vh;
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
     /* margin-bottom: 2%; */
+    position: sticky;
+    top: 0;
 }
 .input{
     height: 25vh;
@@ -164,22 +166,123 @@
     background-image: linear-gradient(96deg, #53b2fe, #065af3);
     color: white;
 }
+.enter button:active{
+    background:#065af3;
+}
 .hotel_card{
-    border: 1px solid black;
-    margin-bottom: 5px;
-    height: 50vh;
-    width: 20vw;
+    width: 50%;
+    /* height: 30vh; */
+    padding: 0.5%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 1%;
+}
+.hotel_card:hover{
+    cursor: pointer;
+}
+.left{
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.right{
+    width: 68%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.right .htnname_loc{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.htnname_loc .hotel_name{
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.htnname_loc .location{
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+}
+.right .rating{
+    box-sizing:content-box;
+    padding: 3px;
+    width: 23px;
+    /* border: 1px solid black; */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    margin-right: 1%;
+    color: white;
+    background-color: #2b68db;
+}
+.rating_container{
+    display:flex;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    align-items: center;
+}
+.rating_container .review_count{
+    font-size: 2vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: light;
+    color: rgb(73, 73, 73);
+}
+.right .review_Word{
+    font-size: 2.4vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    color:#2b68db;
+}
+.cost_room{
+    margin-bottom: 3%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+.cost{
+    font-size: 3.2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+.cost_room .room_day{
+    margin-left: 2%;
+}
+.right .book_btn{
+    width: 7vw;
+    height: 5.2vh;
+    background: #3471e1;
+    color: white;
+    border-radius: 3px;
+    font-size: 2vh;
+    font-weight: bold;
+    margin-left: 1%;
+    border: none;
+    outline: none;
+}
+.right .book_btn:hover{
+    cursor: pointer;;
+}
+.right .book_btn:active{
+    background: #0041b8;
 }
 #main_screen{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.himg{
-    width:19vw;
-    height: 34vh;
-    background:center no-repeat;
-    background-size: cover;
+    /* overflow-y:auto;
+    height:57vh ; */
+    padding-top: 2%;
 }
 .font{
     font-size: 2.1vh;
