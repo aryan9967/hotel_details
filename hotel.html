@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top_navi">
+        <div class="navigation">
+        </div>
+        <div class="top">
+            <div class="input">
+                <div class="input_values">
+                    <div class="name">
+                        <p class="font pmargin">Enter city name</p>
+                        <input type="text" id="city" placeholder="City Name" required class="fontbold">
+                    </div>
+                    <div class="check_in">
+                        <p class="font pmargin">Check in </p>
+                        <input type="date" id="check_in" class="date">
+                    </div>
+                    <div class="check_in">
+                        <p class="font pmargin">Check out </p>
+                        <input type="date" id="check_out" class="date">
+                    </div>
+                    <div class="room_guest">
+                        <p class="font pmargin">Rooms & Adults</p>
+                        <input type="text" class="room_guest_display" id="room_guest_display">
+                        <div class="room">
+                            <div class="_input">
+                                <div class="label_value">Rooms</div>
+                                <div class="input_value_r_a">
+                                    <select id="room">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="_input">
+                                <div class="label_value">Adults</div>
+                                <div class="input_value_r_a">
+                                    <select id="person">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btn_inp">
+                                <button class="btn_r_a" onclick="get_room()">APPLY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enter">
+                    <button onclick="get_city_id()">SEARCH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main_screen">
+        <div class="hotel_card">
+            <div>Treebo Tryst Savera Inn</div>
+            <div class="himg" style="background-image:url('https://cf.bstatic.com/xdata/images/hotel/400x800/442837908.jpg?k=d7078da1b40334158ee292015ba7081a28203163d85984a75e7474b3387fb00f&amp;o=')"></div>
+            <div>63555.32</div>
+            <div>7.7</div>
+            <button onclick="">Book Now</button></div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>
