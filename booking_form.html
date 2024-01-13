@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>Booking details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking_form.css">
+    <script src="https://kit.fontawesome.com/c33097aea5.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <div class="upper_layer">
+        <div class="form">
+            <h1>Booking details</h1>
+            <form class="job_form" method="post">
+                <div class="display">
+                    <div class="left_side">
+                        <input type="text" placeholder="First Name" required title="required field" name="firstname" autofocus
+                            class="input_txt" id="firstname"><br><br>
+
+                        <input type="text" placeholder="Surname" required title="required field" name="lastname"
+                            class="input_txt"><br><br>
+
+                        <input type="text" placeholder="Middle Name" class="input_txt" name="middlename"><br><br>
+
+                        <input type="tel" title="eg: 8888888323" pattern="[0-9]{10}" placeholder="Mobile No." name="contact"
+                            maxlength="10" required title="required field" class="input_txt" id="phone"><br><br>
+
+                        <input type="text" placeholder="Address" class="input_txt" name="address"><br><br>
+                        <input type="email" placeholder="email" class="input_txt" name="email" id="email"><br><br>
+                    </div>
+                    <div class="right_side">
+                        <input type="text" class="input_txt" id="hotel_id" readonly name="hotel_id">
+                        <input type="text" class="input_txt" id="hotel_name" readonly name="hotel_name">
+                        <input type="text" class="input_txt" id="check_in" readonly name="check_in">
+                        <input type="text" class="input_txt" id="check_out" readonly name="check_out">
+                        <input type="text" class="input_txt" id="price" readonly name="price">
+                    </div>
+
+                </div>
+                <input type="submit" value="BOOK" id="submit" class="submit" onclick="sendEmail()" >
+            </form>
+        </div>
+    </div>
+    <script src="booking_form.js">
+        
+    </script>
+    <script src="message.js"></script>
+</body>
+
+</html>

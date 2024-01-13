@@ -1,0 +1,120 @@
+body{
+    padding:0%;
+    overflow: hidden;
+    margin:0%;
+}
+.form{
+    font-family: 'Times New Roman', Times, serif;
+    margin:auto;
+    height: 74%;
+    width:55%;
+    /* border:1px solid black; */
+    border-radius:10px;
+    /* color: aquamarine; */
+    align-items: center;
+    background-color:rgb(238, 238, 238);
+    overflow: hidden;
+    /* padding-bottom: 10px; */
+    padding-left:20px;
+    font-size: 17;
+    box-shadow: 0px 0px 10px 3px rgb(149, 149, 149) ;
+    /* margin-top: 5%; */
+
+}
+.upper_layer{
+    
+    /* margin-top: -5%; */
+    height:100%;
+    background-color: rgba(111, 187, 112, 0.5);
+    margin:0%;
+    padding-top: 6%;
+    overflow: hidden;
+    
+}
+.job_form{
+    padding:10px;
+   
+    height:65%;
+    
+}
+.display{
+    display:flex;
+    flex-direction: row;
+    height:100%;
+}
+.input_txt{
+    height:10%;
+    /* margin:5px; */
+    width:80%;
+    /* padding:10px; */
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-size: 17;
+    border:none;
+    background-color:rgb(238, 238, 238) ;
+    border-bottom:1px solid gray;
+    margin-top:-3px;
+    margin-bottom: 4%;
+}
+.input_txt:focus{
+    border:none;
+    outline:none;
+    
+    border-bottom:1px solid gray;
+    transform: scale(1.03);
+    /* background-color:rgb(208, 207, 207) ;*/
+   
+}
+.input_txt:hover{
+    /* background-color: rgb(233, 233, 233); */
+    transform: scale(1.03);
+    transition: 0.15s;
+    /* border-radius: 5px;  */
+}
+.left_side{
+    width:50%;
+    height:100%;
+}
+.right_side{
+    width:50%;
+    height:100%;
+    /* padding-top:30px; */
+   
+    
+}
+.label_radio{
+    font-size: 17;
+}
+.submit{
+    border-radius:10px;
+    display:block;
+    margin:auto;
+    margin-top:25px;
+    height:15%;
+    width:17%;
+    /* margin-bottom:px; */
+    font-size: 20;
+    background-color: rgb(70, 209, 105);
+    border:none;
+    border: 1px solid black;
+}
+.submit:hover{
+    transform: scale(1.03);
+    transition: 0.15s;
+    background-color: rgb(62, 183, 92);
+}
+.submit:active{
+    background-color: rgb(53, 153, 78);
+}
+
+.cursor{
+    cursor: pointer;
+}
+#DOB{
+    cursor: pointer;
+    width:100%;
+}
+#upload_file{
+    border: 1px solid black;
+    width: 100%;
+}

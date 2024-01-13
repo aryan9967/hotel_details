@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -69,31 +70,32 @@
                 <div class="enter">
                     <button onclick="get_city_id()">SEARCH</button>
                 </div>
+                <!-- <button onclick="sort_by_price()">Sort by price</button>
+                <button onclick="sort_by_rating()">Sort by rating</button> -->
             </div>
         </div>
     </div>
-    <div id="main_screen">
-        <div class="hotel_card">
-            <div class="left"  style="background-image:url('https://cf.bstatic.com/xdata/images/hotel/400x800/442837908.jpg?k=d7078da1b40334158ee292015ba7081a28203163d85984a75e7474b3387fb00f&amp;o=')">
-            </div>
-            <div class="right">
-                <div class="htnname_loc"><div class="hotel_name">Treebo Tryst Savera Inn</div><div class="location font"><span class="material-symbols-outlined">
-                    location_on
-                    </span>Mumbai</div></div>
-                <div class="rating_container"><div class="rating">7.7</div><div class="review_count">(219 reviews)</div></div>
-                <div class="review_Word">Very Good</div>
-                <div class="cost_room">
-                    <div class="cost"><span class="material-symbols-outlined">
-                        currency_rupee
-                        </span>63555.32 
-                    </div>
-                    <div class="font room_day">(2 days & 4 rooms)</div>
+    <div class="content_screen">
+        <div class="sidebar">
+            <div class="filters">
+                <div class="filter_heading">
+                    FILTERS
                 </div>
-                <button class="book_btn"onclick="">BOOK NOW</button>
+                <div class="price_sort_div">
+                    <input type="checkbox" value="true" id="price_sort"> <label for="price_sort">Sort by price</label>
+                </div>
+                <div class="rating_sort_div">
+                    <input type="checkbox" value="true" id="rating_sort"> <label for="rating_sort">Sort by rating</label>
+                </div>
+                <div class="apply_sort_div"><button onclick="sort()">APPLY</button></div>
             </div>
         </div>
+        <div id="main_screen">
+
+        </div>
     </div>
-    <script src="function.js"></script>
+    <script  src="function.js"></script>
+    
 </body>
 
 </html>
